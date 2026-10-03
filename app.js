@@ -1,5 +1,5 @@
-const DEMO_TRACKING = "NEXA-482913";
-const DEMO_EMAIL = "charityamadi625@gmail.com";
+const DEMO_TRACKING = "N-26628482913";
+const DEMO_EMAIL = "dzmitry76ride@gmail.com";
 
 // Shipment schedule. The page calculates the current status from the visitor's
 // live browser clock, so the tracking state changes automatically over time.
