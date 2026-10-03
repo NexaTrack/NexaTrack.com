@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="NexaTrack multi-courier shipment tracking and logistics management.">
+  <title>NexaTrack — Move anything. Track everything.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">N</span><span>Nexa<span>Track</span></span></a>
+    <button class="nav-toggle" aria-label="Open menu">☰</button>
+    <nav class="nav-links">
+      <a class="active" href="index.html">Home</a>
+      <a href="tracking.html">Track shipment</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="nav-cta" href="tracking.html">Track now <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-slides" aria-hidden="true">
+        <div class="hero-slide is-active" style="background-image:url('hero-1.jpg')"></div>
+        <div class="hero-slide" style="background-image:url('hero-2.jpg')"></div>
+        <div class="hero-slide" style="background-image:url('hero-3.jpg')"></div>
+        <div class="hero-slide" style="background-image:url('hero-4.jpg')"></div>
+        <div class="hero-slide" style="background-image:url('hero-5.jpg')"></div>
+        <div class="hero-slide" style="background-image:url('hero-6.jpg')"></div>
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <div class="eyebrow light"> GLOBAL LOGISTICS, ONE VIEW</div>
+        <h1>Move anything.<br><em>Track everything.</em></h1>
+        <p class="hero-copy">One intelligent logistics platform for parcels, freight, air cargo, ocean containers and last-mile deliveries — across carriers and borders.</p>
+        <div class="hero-actions">
+          <a class="button button-light" href="tracking.html">Track a shipment <span>→</span></a>
+          <a class="text-link light-link" href="services.html">Explore services <span>↗</span></a>
+        </div>
+        <div class="hero-trust">
+          <div class="avatar-stack"><i>FD</i><i>DH</i><i>UP</i><i>+</i></div>
+          <span>Connected to leading global & regional carriers</span>
+        </div>
+      </div>
+      <div class="hero-bottom container">
+        <div class="slide-count"><strong>01</strong><span>/ 06</span></div>
+        <div class="slider-dots" role="tablist" aria-label="Hero slides">
+          <button class="is-active" data-slide="0"></button><button data-slide="1"></button><button data-slide="2"></button><button data-slide="3"></button><button data-slide="4"></button><button data-slide="5"></button>
+        </div>
+        <div class="scroll-note">SCROLL TO EXPLORE ↓</div>
+      </div>
+    </section>
+
+    <section class="tracking-strip">
+      <div class="container tracking-inner">
+        <div>
+          <div class="eyebrow">REAL-TIME VISIBILITY</div>
+          <h2>Where is your shipment?</h2>
+        </div>
+        <form class="quick-track track-form">
+          <div class="field"><label for="quickTracking">Tracking number</label><input id="quickTracking" name="tracking" placeholder="Enter tracking number" required></div>
+          <div class="field"><label for="quickEmail">Email</label><input id="quickEmail" name="email" type="email" placeholder="you@company.com" required></div>
+          <button class="button button-dark" type="submit">Track shipment <span>→</span></button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section-heading split">
+        <div>
+          <div class="eyebrow">ONE PLATFORM</div>
+          <h2>From first mile<br>to final delivery.</h2>
+        </div>
+        <p>Built for businesses that need a single source of truth across every mode, every courier and every destination.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card dark-card">
+          <span class="card-number">01</span><div class="service-icon">◉</div>
+          <h3>Express & parcel</h3><p>Track time-critical parcels across domestic and international networks.</p><a href="services.html">Explore →</a>
+        </article>
+        <article class="service-card">
+          <span class="card-number">02</span><div class="service-icon">↗</div>
+          <h3>Freight & cargo</h3><p>Visibility for road, ocean, air freight and containerized shipments.</p><a href="services.html">Explore →</a>
+        </article>
+        <article class="service-card accent-card">
+          <span class="card-number">03</span><div class="service-icon">⌁</div>
+          <h3>Control tower</h3><p>Turn fragmented carrier events into one clear operational dashboard.</p><a href="dashboard.html">Open dashboard →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section muted">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">CARRIER-AGNOSTIC</div><h2>One dashboard.<br>Every carrier.</h2>
+        </div>
+        <div class="courier-row">
+          <div class="courier"><b>DH</b><span>DHL</span></div><div class="courier"><b>FD</b><span>FedEx</span></div>
+          <div class="courier"><b>UP</b><span>UPS</span></div><div class="courier"><b>US</b><span>USPS</span></div>
+          <div class="courier"><b>AR</b><span>Aramex</span></div><div class="courier"><b>DP</b><span>DPD</span></div>
+          <div class="courier"><b>+40</b><span>more</span></div>
+        </div>
+        <div class="metrics">
+          <div><strong>40+</strong><span>carrier connections</span></div><div><strong>190+</strong><span>countries supported</span></div>
+          <div><strong>24/7</strong><span>shipment visibility</span></div><div><strong>99.9%</strong><span>platform uptime target</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta container">
+      <div><div class="eyebrow light">READY WHEN YOU ARE</div><h2>Make every shipment<br>feel <em>under control.</em></h2></div>
+      <a class="button button-light" href="contact.html">Talk to our team <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="index.html"><span class="brand-mark">N</span><span>Nexa<span>Track</span></span></a><p>Multi-courier visibility for modern commerce.</p></div><div><b>Platform</b><a href="tracking.html">Tracking</a><a href="dashboard.html">Dashboard</a><a href="services.html">Services</a></div><div><b>Company</b><a href="contact.html">Contact</a><a href="Privacy.html">Privacy</a><a href="Terms.html">Terms</a></div></div><div class="container footer-bottom"><span>© 2026 NexaTrack</span><span>Built for global movement.</span></div></footer>
+<!-- Start of Tawk.to Script -->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6a8ca47332c63a3448b62617/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!-- End of Tawk.to Script -->
+  <script src="app.js"></script>
+</body>
+</html>

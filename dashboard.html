@@ -1,0 +1,25 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Shipment Dashboard — NexaTrack</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head>
+<body class="dashboard-page"><header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">N</span><span>Nexa<span>Track</span></span></a><button class="nav-toggle">☰</button><nav class="nav-links"><a href="index.html">Home</a><a href="tracking.html">Track shipment</a><a class="active" href="dashboard.html">Dashboard</a><a href="services.html">Services</a><a href="contact.html">Contact</a></nav><a class="nav-cta" href="tracking.html">New tracking <span>+</span></a></header>
+<main class="container dashboard-wrap"><section class="dashboard-lock" id="dashboardLock" hidden><div class="lock-icon">⌁</div><div class="eyebrow">PRIVATE SHIPMENT AREA</div><h1>Shipment dashboard locked</h1><p>Verify your tracking number and delivery email first. Your shipment details will remain hidden until verification succeeds.</p><a class="button button-dark" href="tracking.html">Verify shipment <span>→</span></a></section>
+<div id="dashboardContent"><div class="dashboard-head"><div><div class="eyebrow">SHIPMENT DASHBOARD</div><h1 id="dashTitle">Shipment overview</h1><p id="dashSub">Loading shipment details…</p></div><a class="button button-outline" href="tracking.html">← Track another</a></div>
+<div class="status-banner"><div><span class="status-dot"></span><div><small>CURRENT STATUS</small><strong id="dashStatus">In transit</strong></div></div><div><small>ESTIMATED DELIVERY</small><strong id="dashEta">—</strong></div><div><small>LAST SCAN</small><strong id="dashLast">—</strong></div><div class="progress-wrap"><div class="progress-label"><span>Journey progress</span><b id="dashProgressText">—</b></div><div class="progress"><i id="dashProgress"></i></div></div></div>
+<div class="dashboard-grid"><section class="main-column"><div class="dash-card"><div class="card-heading"><div><span class="eyebrow">MOVEMENT</span><h2>Shipment timeline</h2></div><span class="carrier-chip" id="dashCarrier">CARRIER</span><span class="live-clock" id="dashLiveTime">Live · —</span></div><div class="timeline" id="timeline"></div></div>
+<div class="dash-card"><div class="card-heading"><div><span class="eyebrow">ROUTE</span><h2>From origin to destination</h2></div></div><div class="route-map"><div class="route-line"></div><div class="route-point origin"><span>01</span><b id="dashOrigin">Origin</b><small>Dispatched</small></div><div class="route-point mid"><span>02</span><b id="dashMid">Hub</b><small>In transit</small></div><div class="route-point destination"><span>03</span><b id="dashDestination">Destination</b><small>Delivery</small></div></div></div></section>
+<aside class="side-column"><div class="dash-card package-card"><div class="card-heading"><div><span class="eyebrow">PACKAGE</span><h2>Details</h2></div></div><dl><dt>Tracking ID</dt><dd id="detailId">—</dd><dt>Service</dt><dd id="detailService">—</dd><dt>Pieces</dt><dd id="detailPieces">—</dd><dt>Weight</dt><dd id="detailWeight">—</dd><dt>Destination</dt><dd id="detailDest">—</dd></dl></div>
+<div class="dash-card"><div class="card-heading"><div><span class="eyebrow">DOCUMENTS</span><h2>Files</h2></div></div><div class="doc-row"><span>▧</span><div><b>Commercial invoice</b><small>PDF · 184 KB</small></div><button>↓</button></div><div class="doc-row"><span>▧</span><div><b>Proof of shipment</b><small>PDF · 92 KB</small></div><button>↓</button></div></div>
+<div class="help-card"><span>?</span><div><b>Need help?</b><p>Chat directly with the logistics support team.</p><a href="#chat" data-open-chat>Open live chat →</a></div></div></aside></div></div></main>
+ <footer class="footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="index.html"><span class="brand-mark">N</span><span>Nexa<span>Track</span></span></a><p>Multi-courier visibility for modern commerce.</p></div><div><b>Platform</b><a href="tracking.html">Tracking</a><a href="dashboard.html">Dashboard</a><a href="services.html">Services</a></div><div><b>Company</b><a href="contact.html">Contact</a><a href="Privacy.html">Privacy</a><a href="Terms.html">Terms</a></div></div><div class="container footer-bottom"><span>© 2026 NexaTrack</span><span>Built for global movement.</span></div></footer>
+<!-- Start of Tawk.to Script -->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6a8ca47332c63a3448b62617/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!-- End of Tawk.to Script -->
+<script src="app.js"></script></body></html>

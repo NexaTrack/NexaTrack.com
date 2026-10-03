@@ -1,0 +1,80 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Track Shipment — NexaTrack</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head>
+<body class="inner-page tracking-page">
+<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">N</span><span>Nexa<span>Track</span></span></a><button class="nav-toggle">☰</button><nav class="nav-links"><a href="index.html">Home</a><a class="active" href="tracking.html">Track shipment</a><a href="dashboard.html">Dashboard</a><a href="services.html">Services</a><a href="contact.html">Contact</a></nav><a class="nav-cta" href="#chat" data-open-chat>Live support <span>↗</span></a></header>
+<main class="tracking-result-page container">
+  <section class="tracking-title"><div class="eyebrow">SHIPMENT TRACKING</div><h1>Track your shipment</h1><p>Enter your tracking number and delivery email to see the latest movement, delivery estimate and shipment details.</p></section>
+
+  <section class="tracking-search-card">
+    <div class="tracking-search-heading"><div><span class="eyebrow">FIND YOUR SHIPMENT</span><h2>Tracking details</h2><p>Use your order details to check the current status.</p></div><span class="status-pill">● LIVE TRACKING</span></div>
+    <form class="tracking-search-form track-form">
+      <div class="input-wrap"><label>Tracking number</label><input name="tracking" placeholder="Enter tracking number" autocomplete="off" required></div>
+      <div class="input-wrap"><label>Email address</label><input name="email" type="email" placeholder="you@company.com" required></div>
+      <button class="button button-dark" type="submit">Track shipment <span>→</span></button>
+    </form>
+    
+    <div class="tracking-error" id="trackingError" hidden>We could not verify those shipment details. Please check your tracking information and try again.</div>
+  </section>
+
+  <section class="tracking-order-card" id="trackingResult" hidden>
+    <div class="order-summary">
+      <div><span class="eyebrow">SHIPMENT</span><div class="order-title-row"><h2 id="trackResultId">Shipment</h2><span class="result-status" id="trackStatus">Scheduled</span></div><p>Shipment date: <span id="trackShipmentDate">—</span> · International Priority</p></div>
+      <div class="result-actions"><button class="small-action" type="button" onclick="window.print()">⌁ Print</button><button class="small-action" type="button" data-open-chat>Support</button></div>
+    </div>
+
+    <div class="progress-card">
+      <div class="card-heading"><div><span class="eyebrow">DELIVERY PROGRESS</span><h2>Estimated delivery: <span id="trackEta">Oct 5, 2026</span></h2></div><strong id="trackProgressText">72%</strong></div>
+      <div class="tracking-progress"><i id="trackProgress" style="width:72%"></i></div>
+      <div class="progress-steps">
+        <div class="progress-step"><span>○</span><b>Booked</b><small>—</small></div>
+        <div class="progress-step"><span>○</span><b>Picked up</b><small>—</small></div>
+        <div class="progress-step"><span>○</span><b>Customs</b><small>—</small></div>
+        <div class="progress-step"><span>○</span><b>Delivered</b><small>—</small></div>
+      </div>
+    </div>
+
+    <div class="tracking-section-card">
+      <div class="card-heading"><div><span class="eyebrow">MOVEMENT</span><h2>Shipment timeline</h2></div><span class="carrier-chip">Nexa Logistics</span></div>
+      <div class="result-timeline" id="trackTimeline"></div>
+    </div>
+
+    <div class="tracking-info-card">
+      <div class="card-heading"><div><span class="eyebrow">TRACKING INFORMATION</span><h2>Latest shipment data</h2></div></div>
+      <div class="tracking-info-grid">
+        <div><span>Carrier</span><strong id="trackCarrier">Nexa Logistics</strong><small>Multi-courier network</small></div>
+        <div><span>Last update</span><strong id="trackLastUpdate">Shipment movement recorded</strong><small id="trackLastUpdateTime">—</small><small class="live-clock" id="trackLiveTime">Live · —</small></div>
+        <div><span>Status</span><strong class="info-status" id="trackStatusDetail">Shipment is scheduled for processing</strong><small id="trackStatusDetailSub">Live shipment status</small></div>
+        <div><span>Last location</span><strong id="trackLastLocation">—</strong><small>Current shipment location</small></div>
+      </div>
+    </div>
+
+    <div class="tracking-section-card">
+      <div class="card-heading"><div><span class="eyebrow">SHIPMENT CONTENTS</span><h2>Package details</h2></div></div>
+      <div class="shipment-items">
+        <div class="shipment-item"><div class="item-icon">▧</div><div><strong>Private Consignment</strong><span>Priority Global · Qty: 1</span></div><b>45 kg</b></div>
+       
+      </div>
+    </div>
+
+    <div class="tracking-details-grid">
+      <div class="tracking-detail-card"><div class="eyebrow">SHIPMENT ADDRESS</div><h3>Origin</h3><strong id="trackOrigin">Kyiv, Ukraine</strong><p>Shipment date: October 3, 2026</p></div>
+      <div class="tracking-detail-card"><div class="eyebrow">DELIVERY ADDRESS</div><h3 id="trackDestination">Minsk, Belarus</h3><strong id="trackDestinationFull">220034, Republic of Belarus, Minsk, Krasnozvezdnaya Street, 1</strong><p>Estimated delivery: October 5, 2026</p></div>
+    </div>
+
+    <div class="tracking-help-card"><div><span class="eyebrow">NEED HELP?</span><h2>Talk to our support team</h2><p>Get live assistance with this shipment or any delivery question.</p></div><button class="button button-dark" type="button" data-open-chat>Open live chat <span>→</span></button></div>
+  </section>
+</main>
+   <footer class="footer"><div class="container footer-grid"><div><a class="brand footer-brand" href="index.html"><span class="brand-mark">N</span><span>Nexa<span>Track</span></span></a><p>Multi-courier visibility for modern commerce.</p></div><div><b>Platform</b><a href="tracking.html">Tracking</a><a href="dashboard.html">Dashboard</a><a href="services.html">Services</a></div><div><b>Company</b><a href="contact.html">Contact</a><a href="Privacy.html">Privacy</a><a href="Terms.html">Terms</a></div></div><div class="container footer-bottom"><span>© 2026 NexaTrack</span><span>Built for global movement.</span></div></footer>
+<!-- Start of Tawk.to Script -->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6a8ca47332c63a3448b62617/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!-- End of Tawk.to Script -->
+<script src="app.js"></script></body></html>
